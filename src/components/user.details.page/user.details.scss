@@ -1,0 +1,25 @@
+@import "./src/styles/vars";
+
+.UserDetails {
+  padding: $standard-gap;
+
+  &-Title {
+    margin-bottom: $standard-gap;
+    text-align: center;
+  }
+
+  &-Content {
+    border-radius: $standard-gap;
+    padding: $standard-gap $standard-gap 0;
+    background-color: $secondary-bg-color;
+  }
+
+  &-Card {
+    height: 100%;
+    padding-bottom: $standard-gap;
+  }
+}
+
+.card {
+  height: 100% !important;
+}

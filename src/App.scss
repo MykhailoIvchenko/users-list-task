@@ -1,0 +1,16 @@
+@import "./src/styles/vars";
+@import "./src/styles/mixins";
+
+.App {
+  background-color: $main-bg-color;
+  min-height: 100vh;
+  font-size: $desktop-font-size;
+
+  @include onMobile {
+    font-size: $mobile-font-size;
+  }
+}
+
+.FieldName {
+  font-style: italic;
+}

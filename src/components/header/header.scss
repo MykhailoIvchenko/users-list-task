@@ -1,0 +1,21 @@
+@import './src/styles/vars';
+
+.Header {
+  background-color: $main-bg-color;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-Logo {
+    height: 60px;
+    width: 60px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

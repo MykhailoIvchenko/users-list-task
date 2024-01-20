@@ -1,0 +1,22 @@
+@import "./src/styles/vars";
+@import "./src/styles/mixins";
+
+.UserShortInfo {
+  &-Text {
+    display: flex;
+    align-items: center;
+
+    @include onMobile {
+      justify-content: center;
+    }
+
+    &_Main {
+      font-weight: bold;
+    }
+  }
+
+  &-ButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

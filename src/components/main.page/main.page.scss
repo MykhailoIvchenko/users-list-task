@@ -1,0 +1,10 @@
+@import "./src/styles/vars";
+
+.MainPage {
+  padding-bottom: $footer-height;
+
+  &-Title {
+    margin: $standard-gap 0;
+    text-align: center;
+  }
+}

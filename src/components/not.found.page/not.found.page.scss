@@ -1,0 +1,20 @@
+@import "./src/styles/vars";
+
+.NotFoundPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - #{$header-height});
+
+  &-Title {
+    margin-bottom: $standard-gap * 2;
+  }
+
+  &-LinkToMain {
+    margin-top: $standard-gap * 2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
