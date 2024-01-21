@@ -1,7 +1,7 @@
 {
   "name": "users-list-test-task",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@redux-saga/types": "^1.2.1",
     "@reduxjs/toolkit": "^2.0.1",
