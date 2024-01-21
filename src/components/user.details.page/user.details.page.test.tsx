@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
-import {MemoryRouter, Route, Routes} from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
+import {MemoryRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import UserDetailsPage from './user.details.page';

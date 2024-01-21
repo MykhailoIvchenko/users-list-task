@@ -7,7 +7,7 @@ const name = 'Chelsey Dietrich';
 const username = 'Kamren';
 const email = 'Lucio_Hettinger@annie.ca';
 
-describe('CompanyData component ', () => {
+describe('PersonData component ', () => {
   beforeEach(() => {
     render(
       <PersonData
@@ -23,10 +23,10 @@ describe('CompanyData component ', () => {
     cleanup();
   });
 
-  it('should contain the html-element with PersonData class', () => {
-    const contactsElement = screen.getByTestId('PersonData');
+  it('should contain an html-element with PersonData class', () => {
+    const personDataElement = screen.getByTestId('PersonData');
 
-    expect(contactsElement).toHaveClass('PersonData');
+    expect(personDataElement).toHaveClass('PersonData');
   });
 
   it('should contain an image', () => {

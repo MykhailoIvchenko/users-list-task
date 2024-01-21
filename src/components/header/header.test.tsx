@@ -18,18 +18,20 @@ describe('Header component ', () => {
 
   it('should contain the tag header (banner role)', () => {
     const headerElement = screen.getByRole('banner');
+
     expect(headerElement).toBeInTheDocument();
   });
 
   it('should contain the header element with Header class', () => {
     const headerElement = screen.getByRole('banner');
+
     expect(headerElement).toHaveClass('Header');
   });
 
   it('should contain an image', () => {
-    const logoElement = screen.getByRole('img');
+    const imageElement = screen.getByRole('img');
 
-    expect(logoElement).toBeInTheDocument();
+    expect(imageElement).toBeInTheDocument();
   });
 
   it('should contain logo image (with alt logo)', () => {
@@ -39,9 +41,9 @@ describe('Header component ', () => {
   });
 
   it('should contain an element with to main title', () => {
-    const linkToMain = screen.getByTitle('На головну');
+    const titleToMain = screen.getByTitle('На головну');
 
-    expect(linkToMain).toBeInTheDocument();
+    expect(titleToMain).toBeInTheDocument();
   });
 
   it('should contain logo image with to main title', () => {

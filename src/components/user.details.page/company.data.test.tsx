@@ -23,7 +23,7 @@ describe('CompanyData component ', () => {
     cleanup();
   });
 
-  it('should contain the html-element with CompanyData class', () => {
+  it('should contain an html-element with CompanyData class', () => {
     const companyElement = screen.getByTestId('CompanyData');
 
     expect(companyElement).toHaveClass('CompanyData');

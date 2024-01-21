@@ -7,7 +7,6 @@ import Loader from "../loader/loader";
 import UserShortInfo from "./user.short.info";
 
 const UsersList = () => {
-  //#region Work with users
   const { users, status } = useAppSelector(getAllUsers);
   const dispatch = useAppDispatch();
 
@@ -19,7 +18,6 @@ const UsersList = () => {
     setUser(null);
     setUsers();
   }, []);
-  //#endregion
 
   return (
     <>

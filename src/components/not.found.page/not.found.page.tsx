@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './not.found.page.scss';
-import {Link} from "react-router-dom";
 
 const NotFoundPage = () => {
   return (
@@ -10,7 +10,7 @@ const NotFoundPage = () => {
       </h3>
 
       <img
-        src={'./sad-face.svg'}
+        src={'/sad-face.svg'}
         className={'NotFoundPage-Image'}
         alt={'Sad face'}
       />

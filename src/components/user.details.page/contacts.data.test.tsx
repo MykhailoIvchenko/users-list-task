@@ -11,7 +11,7 @@ const zipcode = '33263';
 const phone = '(254)954-1289';
 const website = 'demarco.info';
 
-describe('CompanyData component ', () => {
+describe('ContactsData component ', () => {
   beforeEach(() => {
     render(
       <ContactsData
@@ -30,7 +30,7 @@ describe('CompanyData component ', () => {
     cleanup();
   });
 
-  it('should contain the html-element with ContactsData class', () => {
+  it('should contain an html-element with ContactsData class', () => {
     const contactsElement = screen.getByTestId('ContactsData');
 
     expect(contactsElement).toHaveClass('ContactsData');

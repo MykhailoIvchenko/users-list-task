@@ -9,7 +9,7 @@ import './App.scss';
 
 const App: React.FC = () => {
   return (
-    <div data-testid='App' className='App'>
+    <div data-testid='App' className={'App'}>
       <Header />
 
       <main>

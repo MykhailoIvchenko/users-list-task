@@ -23,13 +23,15 @@ describe('MainPage component ', () => {
     cleanup();
   });
 
-  it('should contain an html-element MainPage class', () => {
+  it('should contain an html-element with MainPage class', () => {
     const mainPageElement = screen.getByTestId('MainPage');
+
     expect(mainPageElement).toHaveClass('MainPage');
   });
 
   it('should contain users text', () => {
     const titleElement = screen.getByText('Користувачі');
+
     expect(titleElement).toBeInTheDocument();
   });
 });

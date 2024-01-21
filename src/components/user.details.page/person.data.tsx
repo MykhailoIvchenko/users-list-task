@@ -15,6 +15,7 @@ const PersonData: React.FC<PersonDataProps> = ({
         <Card.Img variant="top" src={'/personal-info.webp'} />
         <Card.Body>
           <Card.Title>Основна інформація</Card.Title>
+
           <Card.Text>
             <Row>
               <Col md={3} className={'FieldName'}>

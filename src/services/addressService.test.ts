@@ -7,7 +7,7 @@ const zipcode = '92998-3874';
 
 describe('getAddressString', () => {
   it('should be a function', () => {
-    expect(typeof addressService.getAddressString).toBe('function');
+    expect(addressService.getAddressString).toBeInstanceOf(Function);
   })
 
   it('should return a string', () => {

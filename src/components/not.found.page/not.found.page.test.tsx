@@ -18,11 +18,13 @@ describe('NotFoundPage component ', () => {
 
   it('should contain the tag with NotFoundPage class', () => {
     const containerElement = screen.getByTestId('NotFoundPage');
+
     expect(containerElement).toHaveClass('NotFoundPage');
   });
 
   it('should contain page does not exist text', () => {
     const titleElement = screen.getByText('На жаль, такої сторінки не існує');
+
     expect(titleElement).toBeInTheDocument();
   });
 
@@ -32,7 +34,7 @@ describe('NotFoundPage component ', () => {
     expect(imageElement).toBeInTheDocument();
   });
 
-  it('should contain image with alt Sag face', () => {
+  it('should contain an image with alt attribute Sad face', () => {
     const imageElement = screen.getByAltText('Sad face');
 
     expect(imageElement).toBeInTheDocument();
