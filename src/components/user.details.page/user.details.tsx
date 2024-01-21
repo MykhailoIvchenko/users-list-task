@@ -15,8 +15,10 @@ const UserDetails: React.FC = () => {
   return (
     <>
       {selectedUser?.id ?
-        <section className={'UserDetails'}>
-          <h3 className={'UserDetails-Title'}>{selectedUser.name}</h3>
+        <section data-testid='UserDetails' className={'UserDetails'}>
+          <h3 data-testid='UserDetails-Title' className={'UserDetails-Title'}>
+            {selectedUser.name}
+          </h3>
 
           <div className={'UserDetails-Content'}>
             <Row>

@@ -11,14 +11,15 @@ const UserDetailsPage: React.FC = () => {
   const selectedUser = useAppSelector(selectUser);
   const dispatch = useAppDispatch();
 
-  const { id } = useParams()
+  const { id } = useParams();
 
   const [isLoading, setIsLoading] = useState(false);
 
   useLayoutEffect(() => {
-    if (!selectedUser.id) {
+    if (!selectedUser?.id) {
       if (id) {
         setIsLoading(true);
+
         usersService.getUserById(parseInt(id))
           .then(user => dispatch(setUser(user))).finally(() => {
             setIsLoading(false)

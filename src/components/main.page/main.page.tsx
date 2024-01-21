@@ -6,7 +6,7 @@ import './main.page.scss';
 
 const MainPage: React.FC = () => {
   return (
-    <section className={'MainPage'}>
+    <section data-testid='MainPage' className={'MainPage'}>
       <Container>
         <h2 className={'MainPage-Title'}>Користувачі</h2>
 

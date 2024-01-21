@@ -14,7 +14,7 @@ const ContactsData: React.FC<ContactsDataProps> = ({
   website,
 }) => {
   return (
-    <section className={`ContactsData ${addClasses}`}>
+    <section data-testid='ContactsData' className={`ContactsData ${addClasses}`}>
       <Card>
         <Card.Img variant="top" src={'/compass.webp'} />
         <Card.Body>

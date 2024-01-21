@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const NotFoundPage = () => {
   return (
-    <section className={'NotFoundPage'}>
+    <section data-testid='NotFoundPage' className={'NotFoundPage'}>
       <h3 className={'NotFoundPage-Title'}>
         На жаль, такої сторінки не існує
       </h3>

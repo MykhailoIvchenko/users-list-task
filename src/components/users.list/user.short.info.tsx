@@ -19,16 +19,15 @@ const UserShortInfo: React.FC<UserDataProps> = ({user}) => {
     </Tooltip>
   );
 
-  //#region Handle details click
   const handleUserDetailsClick = (user: IUser | null) => {
     if (user) {
       dispatch(setUser(user));
       navigate(`/users/${user?.id}`);
     }
   }
-  //#endregion
+
   return (
-    <div className={'UserShortInfo'}>
+    <div data-testid='UserShortInfo' className={'UserShortInfo'}>
       <Row>
           <Col
             md={3}
@@ -61,7 +60,7 @@ const UserShortInfo: React.FC<UserDataProps> = ({user}) => {
           <Button
             onClick={() => handleUserDetailsClick(user)}
           >
-            Детальніше
+            Деталі
           </Button>
         </Col>
       </Row>

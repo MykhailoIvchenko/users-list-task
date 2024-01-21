@@ -22,7 +22,7 @@ const UsersList = () => {
   //#endregion
 
   return (
-    <div>
+    <>
       {status == 'loading' ?
         <Loader />
         :
@@ -37,7 +37,7 @@ const UsersList = () => {
           }
         </ListGroup>
       }
-    </div>
+    </>
   );
 };
 

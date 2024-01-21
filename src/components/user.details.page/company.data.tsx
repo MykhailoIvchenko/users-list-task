@@ -2,7 +2,6 @@ import React from 'react';
 import {Card} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {addressService} from "../../services/addressService";
 
 const CompanyData: React.FC<CompanyDataProps> = ({
   addClasses,
@@ -11,9 +10,10 @@ const CompanyData: React.FC<CompanyDataProps> = ({
   services,
 }) => {
   return (
-    <section className={`ContactsData ${addClasses}`}>
+    <section data-testid='CompanyData' className={`CompanyData ${addClasses}`}>
       <Card>
-        <Card.Img variant="top" src={'/company.webp'} />
+        <Card.Img variant="top" src={'/company.webp'} alt={'company'}/>
+
         <Card.Body>
           <Card.Title>Інформація про компанію</Card.Title>
 

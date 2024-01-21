@@ -1,22 +1,23 @@
 import axios, {AxiosResponse} from "axios";
+
 const API_URL: string = 'https://jsonplaceholder.typicode.com/users'
 
 const getUsers = async (): Promise<IUser[]> => {
   try {
-    const users: AxiosResponse<IUser[]> = await axios.get(API_URL);
+    const result: AxiosResponse<IUser[]> = await axios.get(API_URL);
 
-    return users.data;
+    return result.data;
   } catch (error) {
-    return []
+    return [];
   }
 }
 
 const getUserById = async (id: number | undefined): Promise<IUser | null> => {
   try {
     if (id) {
-      const user: AxiosResponse<IUser> = await axios.get(`${API_URL}/${id}`);
+      const result: AxiosResponse<IUser> = await axios.get(`${API_URL}/${id}`);
 
-      return user.data;
+      return result.data;
     } else {
       return null;
     }

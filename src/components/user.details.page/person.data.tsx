@@ -10,7 +10,7 @@ const PersonData: React.FC<PersonDataProps> = ({
   email,
 }) => {
   return (
-    <section className={`PersonData ${addClasses}`}>
+    <section data-testid='PersonData' className={`PersonData ${addClasses}`}>
       <Card>
         <Card.Img variant="top" src={'/personal-info.webp'} />
         <Card.Body>
