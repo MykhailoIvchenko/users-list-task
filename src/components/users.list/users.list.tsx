@@ -21,7 +21,7 @@ const UsersList = () => {
 
   return (
     <>
-      {status == 'loading' ?
+      {status === 'loading' ?
         <Loader />
         :
         <ListGroup>
